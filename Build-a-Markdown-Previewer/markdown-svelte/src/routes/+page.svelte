@@ -6,7 +6,7 @@
 </script>
 
 <div
-  class="lg:flex sm:grid grid-rows-3 h-screen gap-8 p-4 border"
+  class="lg:flex grid grid-rows-2 h-screen gap-8 p-4"
 >
   <Editor bind:data />
   <Preview bind:data />
