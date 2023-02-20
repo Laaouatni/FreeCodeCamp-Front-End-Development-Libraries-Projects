@@ -1,13 +1,12 @@
 <script>
-  import AddDecreaseContainer from "./AddDecreaseContainer.svelte";
-import ButtonsContainer from "./ButtonsContainer.svelte";
   import ControlsLabel from "./ControlsLabel.svelte";
-  import ControlsLength from "./ControlsLength.svelte";
+  import AddDecreaseContainer from "./AddDecreaseContainer.svelte";
 
   export let name;
+  export let valueObj;
 </script>
 
 <div class="grid gap-4 border p-4">
   <ControlsLabel {name} />
-  <AddDecreaseContainer {name} />
+  <AddDecreaseContainer {name} {valueObj}/>
 </div>

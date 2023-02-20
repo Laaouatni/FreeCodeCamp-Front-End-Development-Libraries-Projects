@@ -1,8 +1,7 @@
 <script>
-  import ControlsContainer from "../lib/ControlsContainer.svelte";
-
+  import AppContainer from "../lib/AppContainer.svelte";
 </script>
 
 <div class="grid place-items-center h-screen">
-  <ControlsContainer />
+  <AppContainer />
 </div>
