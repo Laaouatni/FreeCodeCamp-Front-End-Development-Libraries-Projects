@@ -4,5 +4,5 @@
 
 
 <div class="text-sm opacity-70">
-  {mathString}
+  {mathString} =
 </div>
