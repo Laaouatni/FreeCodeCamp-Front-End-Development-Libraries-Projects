@@ -6,8 +6,8 @@
 </script>
 
 <div
-  class="border p-4 text-right font-mono bg-blue-700 rounded-t-2xl text-white"
+  class="border border-b-0 p-4 text-right font-mono bg-blue-700 rounded-t-2xl text-white"
 >
   <InputDisplay bind:mathString />
-  <OutputDisplay />
+  <OutputDisplay bind:mathString />
 </div>
