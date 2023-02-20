@@ -8,11 +8,15 @@
     const numbers = mathString.split(/[\+\-\*\/]/);
     const lastNumber = numbers[numbers.length - 1];
     const firstChar = lastNumber[0];
-    
+
     if (firstChar !== "0") {
       mathString += number;
     } else {
-      mathString = mathString.slice(0, -lastNumber.length) + number;
+      if (lastNumber[1] === ".") {
+        mathString += number;
+      } else {
+        mathString = mathString.slice(0, -lastNumber.length) + number;
+      }
     }
   }
 </script>
