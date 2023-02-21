@@ -3,14 +3,16 @@
   import ControlsLength from "./ControlsLength.svelte";
 
   export let name;
-
   export let valueObj;
-  export let value = valueObj[name];
+  
+  let value = valueObj[name];
 
   $: valueObj = {
     ...valueObj,
     [name]: value,
   };
+
+  $: console.log("Add Decrease", valueObj);
 </script>
 
 <div
