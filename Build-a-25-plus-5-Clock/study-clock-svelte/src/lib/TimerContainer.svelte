@@ -6,10 +6,10 @@
   export let valueObj;
 </script>
 
-<div class="grid gap-2">
+<div class="grid gap-4">
   <div class="border p-4 grid place-items-center gap-4">
     <TimerLabel />
     <TimeLeftContainer minute={valueObj.session} />
   </div>
-  <TimerControlsContainer />
+  <TimerControlsContainer bind:valueObj />
 </div>

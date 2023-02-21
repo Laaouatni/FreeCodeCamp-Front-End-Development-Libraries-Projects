@@ -1,11 +1,11 @@
 <script>
   export let time;
+
+  function padTime(time) {
+    return time.toString().padStart(2, "0");
+  }
 </script>
 
 <span>
-  {#if time < 10}
-    0{time}
-  {:else}
-    {time}
-  {/if}
+  {padTime(time)}
 </span>

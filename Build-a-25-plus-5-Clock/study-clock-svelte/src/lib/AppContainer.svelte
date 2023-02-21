@@ -10,5 +10,5 @@
 
 <div class="grid border p-4 gap-8">
   <ControlsContainer bind:valueObj />
-  <TimerContainer {valueObj} />
+  <TimerContainer bind:valueObj />
 </div>

@@ -1,9 +1,16 @@
 <script>
-  const buttonObj = {
-    
-  }
+  import TimerControlsButton from "./TimerControlsButton.svelte";
+
+  export let valueObj;
+
+  const buttonsArray = [
+    { id: "start_stop", nameFunctionality: "Play/pause toggle", icon: "⏯" },
+    { id: "reset", nameFunctionality: "reset", icon: "🔄" },
+  ];
 </script>
 
-<div class="border p-4 flex justify-around">
-  hello hello hello
+<div class="flex justify-around gap-4">
+  {#each buttonsArray as buttonData}
+    <TimerControlsButton {buttonData} bind:valueObj />
+  {/each}
 </div>
