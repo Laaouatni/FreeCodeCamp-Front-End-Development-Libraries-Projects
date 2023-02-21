@@ -5,12 +5,17 @@
 
   export let valueObj;
 
-  $: timeLeftObj = {
+  let timeLeftObj = {
     minute: valueObj.session,
     second: 0,
   };
-  
+
   let interval = null;
+  let isTimerRunning;
+
+  $: if(!isTimerRunning) {
+    timeLeftObj.minute = valueObj.session;
+  }
 </script>
 
 <div class="grid gap-4">
@@ -21,5 +26,10 @@
       second={timeLeftObj.second}
     />
   </div>
-  <TimerControlsContainer bind:timeLeftObj bind:interval {valueObj}  />
+  <TimerControlsContainer
+    bind:timeLeftObj
+    bind:interval
+    bind:valueObj
+    bind:isTimerRunning
+  />
 </div>
