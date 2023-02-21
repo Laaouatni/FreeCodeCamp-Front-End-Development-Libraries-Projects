@@ -1,11 +1,10 @@
 <script>
   export let time;
-
-  function padTime(time) {
-    return time.toString().padStart(2, "0");
-  }
+  import { fly } from "svelte/transition";
 </script>
 
-<span>
-  {padTime(time)}
-</span>
+{#key time}
+  <div in:fly={{y:-30, duration: 1000}}>
+    {time.toString().padStart(2, "0")}
+  </div>
+{/key}

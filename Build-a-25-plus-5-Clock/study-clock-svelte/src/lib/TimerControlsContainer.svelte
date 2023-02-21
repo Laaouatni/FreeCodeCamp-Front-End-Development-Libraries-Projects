@@ -49,7 +49,7 @@
       if (timeLeftObj.second > 0) {
         timeLeftObj.second -= 1;
       }
-      if (timeLeftObj.minute <= 0) {
+      if (timeLeftObj.minute <= 0 && timeLeftObj.second <= 0) {
         clearInterval(interval);
         valueObj = {
           ...valueObj,
