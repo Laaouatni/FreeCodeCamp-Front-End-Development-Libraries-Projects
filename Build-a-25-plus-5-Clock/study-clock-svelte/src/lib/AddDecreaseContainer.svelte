@@ -5,8 +5,6 @@
   export let name;
 
   export let valueObj;
-
-  // $: console.log("Add Decrease", valueObj);
 </script>
 
 <div

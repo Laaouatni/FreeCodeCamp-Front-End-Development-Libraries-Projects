@@ -6,8 +6,6 @@
     break: 5,
     session: 25,
   };
-
-  $: console.log("App Container:", valueObj);
 </script>
 
 <div class="grid border p-4 gap-8">

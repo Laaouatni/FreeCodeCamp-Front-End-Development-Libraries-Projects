@@ -1,13 +1,15 @@
 <script>
   import TimerLabel from "./TimerLabel.svelte";
   import TimeLeftContainer from "./TimeLeftContainer.svelte";
-  
-  export let valueObj;
+  import TimerControlsContainer from "./TimerControlsContainer.svelte";
 
-  $: minute = valueObj.session;
+  export let valueObj;
 </script>
 
-<div class="border p-4 grid place-items-center gap-4">
-  <TimerLabel />
-  <TimeLeftContainer {minute} />
+<div class="grid gap-2">
+  <div class="border p-4 grid place-items-center gap-4">
+    <TimerLabel />
+    <TimeLeftContainer minute={valueObj.session} />
+  </div>
+  <TimerControlsContainer />
 </div>

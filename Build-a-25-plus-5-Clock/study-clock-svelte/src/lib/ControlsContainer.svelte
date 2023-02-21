@@ -4,8 +4,6 @@
   const labelsArray = ["break", "session"];
 
   export let valueObj;
-
-  $: console.log("Controls Container:", valueObj);
 </script>
 
 <div class="flex gap-8">
