@@ -34,7 +34,7 @@
   function startTimer() {
     isTimerRunning = true;
 
-    const ONE_SECOND = 100;
+    const ONE_SECOND = 1000;
     const DEFAULT_OBJ = {
       session: 25,
       break: 5,
@@ -68,7 +68,7 @@
         function toogleMode() {
           mode = mode === modes[0] ? modes[1] : modes[0];
         }
-        
+
         function changeMode() {
           if (mode === modes[0]) {
             timeLeftObj.minute = valueObj.session;

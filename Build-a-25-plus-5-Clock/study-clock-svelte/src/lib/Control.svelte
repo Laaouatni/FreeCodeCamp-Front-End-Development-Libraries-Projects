@@ -6,7 +6,7 @@
   export let valueObj;
 </script>
 
-<div class="grid gap-4 border p-4">
+<div class="grid gap-4 p-4 rounded-lg hover:shadow-md transition">
   <ControlsLabel {name} />
   <AddDecreaseContainer {name} bind:valueObj/>
 </div>

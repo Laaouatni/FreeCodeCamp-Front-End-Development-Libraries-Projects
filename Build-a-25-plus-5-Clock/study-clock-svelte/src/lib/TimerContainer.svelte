@@ -20,8 +20,8 @@
   let mode;
 </script>
 
-<div class="grid gap-4">
-  <div class="border p-4 grid place-items-center gap-4">
+<div class="grid gap-8">
+  <div class="grid place-items-center gap-4">
     <TimerLabel {mode}/>
     <TimeLeftContainer
       minute={timeLeftObj.minute}
