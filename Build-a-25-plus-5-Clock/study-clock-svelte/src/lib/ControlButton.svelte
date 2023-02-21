@@ -2,19 +2,17 @@
   export let data;
 
   function handleMouseDown() {
-    const TIME_TO_WAIT = 500;
     const INTERVAL_TIME = 200;
-    setTimeout(() => {
-      const interval = setInterval(
-        data.codeFunctionality,
-        INTERVAL_TIME,
-      );
-      const mouseup = () => {
-        clearInterval(interval);
-        document.removeEventListener("mouseup", mouseup);
-      };
-      document.addEventListener("mouseup", mouseup);
-    }, TIME_TO_WAIT);
+
+    const interval = setInterval(
+      data.codeFunctionality,
+      INTERVAL_TIME,
+    );
+    const mouseup = () => {
+      clearInterval(interval);
+      document.removeEventListener("mouseup", mouseup);
+    };
+    document.addEventListener("mouseup", mouseup);
   }
 </script>
 

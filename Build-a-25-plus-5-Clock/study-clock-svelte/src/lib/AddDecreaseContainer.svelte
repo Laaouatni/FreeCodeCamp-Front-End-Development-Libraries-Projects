@@ -5,9 +5,12 @@
   export let name;
 
   export let valueObj;
-  console.log(valueObj)
+  export let value = valueObj[name];
 
-  export let value = name === "break" ? valueObj.break : valueObj.session;
+  $: valueObj = {
+    ...valueObj,
+    [name]: value,
+  };
 </script>
 
 <div
