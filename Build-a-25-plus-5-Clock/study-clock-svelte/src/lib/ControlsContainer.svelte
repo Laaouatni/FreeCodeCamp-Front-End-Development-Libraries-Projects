@@ -10,6 +10,6 @@
 
 <div class="flex gap-8">
   {#each labelsArray as name}
-    <Control {name} {valueObj} />
+    <Control {name} bind:valueObj />
   {/each}
 </div>

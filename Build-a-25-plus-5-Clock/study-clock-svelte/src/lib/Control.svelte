@@ -10,5 +10,5 @@
 
 <div class="grid gap-4 border p-4">
   <ControlsLabel {name} />
-  <AddDecreaseContainer {name} {valueObj}/>
+  <AddDecreaseContainer {name} bind:valueObj/>
 </div>

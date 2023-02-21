@@ -11,6 +11,6 @@
 </script>
 
 <div class="grid border p-4 gap-8">
-  <ControlsContainer {valueObj} />
+  <ControlsContainer bind:valueObj />
   <TimerContainer {valueObj} />
 </div>
