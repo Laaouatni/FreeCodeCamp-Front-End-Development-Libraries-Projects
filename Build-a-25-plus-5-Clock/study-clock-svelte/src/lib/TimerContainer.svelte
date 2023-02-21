@@ -16,11 +16,13 @@
   $: if(!isTimerRunning) {
     timeLeftObj.minute = valueObj.session;
   }
+
+  let mode;
 </script>
 
 <div class="grid gap-4">
   <div class="border p-4 grid place-items-center gap-4">
-    <TimerLabel />
+    <TimerLabel {mode}/>
     <TimeLeftContainer
       minute={timeLeftObj.minute}
       second={timeLeftObj.second}
@@ -31,5 +33,6 @@
     bind:interval
     bind:valueObj
     bind:isTimerRunning
+    bind:mode
   />
 </div>
